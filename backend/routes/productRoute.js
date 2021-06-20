@@ -1,22 +1,9 @@
 import express from 'express';
 import Product from '../models/productModel.js';
 import { isAuth, isAdmin } from '../util.js';
-import data from '../data.js';
 import expressAsyncHandler from 'express-async-handler';
 const router=express.Router();
 
-////////////////////
-
-router.get(
-    '/seed',
-    expressAsyncHandler(async (req, res) => {
-       await Product.remove({});
-      const createdProducts = await Product.insertMany(data.products);
-      res.send({ createdProducts });
-    })
-  );
-
-  /////////////////////
 
 router.get("/", async(req, res)=>{
   const name = req.query.name || '';

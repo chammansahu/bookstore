@@ -1,13 +1,13 @@
 export default {
-    enviornment:"test",
-    appId:"53004775309a0edf04e875ffe40035",
-    secretKey:"4324eff37ffb442f159a18320361356578ed22d2",
-    paths:{
-        test:{
-            cashfreePayUrl:"https://test.cashfree.com/billpay/checkout/post/submit"
-        },
-        "prod":{
-            cashfreePayUrl:"https://www.cashfree.com/checkout/post/submit"
-        }
-    }
-}
+  enviornment: "test",
+  appId: "579202a6ff55105e0a1cde067a20297",
+  secretKey: "da08e4e1123bb82a8cbb59ac254c6dd436e09484",
+  paths: {
+    test: {
+      cashfreePayUrl: "https://test.cashfree.com/billpay/checkout/post/submit",
+    },
+    prod: {
+      cashfreePayUrl: "https://www.cashfree.com/checkout/post/submit",
+    },
+  },
+};
