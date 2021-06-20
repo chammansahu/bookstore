@@ -1,20 +1,20 @@
 import mongoose from 'mongoose';
 
 const addressSchema = new mongoose.Schema(
-    {
-      name: { type: String },
-      mobile: { type: String},
-      address: { type: String },
-      city: { type: String},
-      state: { type: String },
-      pincode: { type: Number },
-      landmark: { type: String},
-      place: { type: String },
-    },
-    {
-      timestamps: true,
-    }
-  );
+  {
+    name: { type: String, default: "user name" },
+    mobile: { type: String, default: "1234567890" },
+    address: { type: String, default: "street line1,street lin2 2" },
+    city: { type: String, default: "cityname" },
+    state: { type: String, default: "state name" },
+    pincode: { type: Number, default: 493441 },
+    landmark: { type: String, default: "landmark" },
+    place: { type: String, default: "place name" },
+  },
+  {
+    timestamps: true,
+  }
+);
 
 const UserSchema= new mongoose.Schema({
     name: { type:String},

@@ -15,7 +15,7 @@ import LoadingBox from '../components/LoadingBox';
 import MessageBox from '../components/MessageBox';
 let urlss = 'http://localhost:3000/api/users/islogin';
 
-//l////et url = 'http://localhost:3000/api/users/';
+let url = 'http://localhost:5000/api/users/';
 
 
      const useFetch = (url,urlss) => {
@@ -67,7 +67,7 @@ let urlss = 'http://localhost:3000/api/users/islogin';
 
     const { userInfo } = userSignin;
     const userId= userInfo._id;
-    console.log("22 eeeeffff sss",userId);
+  
  
     useEffect(() => {  
         var sel="111sdfasdf";
